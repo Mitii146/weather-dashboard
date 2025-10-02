@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <div id="container">
+      <h2 id="city-name-header"></h2>
+      <header id="header">
+        <button id="dark-mode">Dark Mode 🌙</button>
+        <input
+          id="input-city-name"
+          placeholder="🔍 Search for your preferred city"
+          class="box"
+          type="text"
+        />
+      </header>
+      <section id="clock-and-weather-display">
+        <div id="clock-container" class="box">
+          <span id="time"></span>
+          <br />
+          <span id="date"></span>
+        </div>
+        <div id="current-weather-container" class="box">
+          <div id="left">
+            <span id="current-temp"></span>
+            <br /><br />
+            <span id="feels-like"></span>
+          </div>
+          <div id="middle">
+            <img src="" alt="icon" id="image" />
+          </div>
+          <div id="right">
+            <span id="humidity"></span>
+            <br /><br />
+            <span id="visibility"></span>
+          </div>
+        </div>
+      </section>
+      <div id="five-next-days-container">
+        <div class="card box">
+          <img src="" alt="icon" class="image-box" />
+          <br />
+          <span class="temp"></span>
+          <br />
+          <span class="day"></span>
+        </div>
+        <div class="card box">
+          <img src="" alt="icon" class="image-box" />
+          <br />
+          <span class="temp"></span>
+          <br />
+          <span class="day"></span>
+        </div>
+        <div class="card box">
+          <img src="" alt="icon" class="image-box" />
+          <br />
+          <span class="temp"></span>
+          <br />
+          <span class="day"></span>
+        </div>
+        <div class="card box">
+          <img src="" alt="icon" class="image-box" />
+          <br />
+          <span class="temp"></span>
+          <br />
+          <span class="day"></span>
+        </div>
+        <div class="card box">
+          <img src="" alt="icon" class="image-box" />
+          <br />
+          <span class="temp"></span>
+          <br />
+          <span class="day"></span>
+        </div>
+      </div>
+      <div
+        id="error-message"
+        class="box"
+        style="display: none; text-align: center; color: red"
+      ></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
